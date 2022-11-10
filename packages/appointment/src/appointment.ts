@@ -1,2 +1,2 @@
 let message: string = 'Hello Hospital Appointment';
-console.log(message);
+console.log('display message',message);
