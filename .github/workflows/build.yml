@@ -18,8 +18,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          projectBaseDir: C:/Users/usinghal/Documents/hosptial/packages/appointment
 
   sonarcloud2:
     name: SonarCloud2
@@ -33,8 +31,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN2 }}
-        with:
-          projectBaseDir: doctor/
 
   sonarcloud3:
     name: SonarCloud3
@@ -48,5 +44,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN3 }}
-        with:
-          projectBaseDir: patient/
